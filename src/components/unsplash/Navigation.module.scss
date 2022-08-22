@@ -1,0 +1,23 @@
+.navigation {
+  padding: 15px;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  padding-inline-start: 20px;
+}
+
+.navigationItem {
+  display: flex;
+  align-items: center;
+  color: #b3b3b3;
+  transition: color 0.2s ease-in-out;
+  font-size: 14px;
+  margin-inline-end: 22px;
+  cursor: pointer;
+  &:hover,
+  &.isCurrent {
+    color: black;
+  }
+  .icon {
+    margin-inline-end: 8px;
+  }
+}
