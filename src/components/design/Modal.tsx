@@ -34,6 +34,7 @@ function useDraggable() {
   const modalRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (modalRef.current) {
+      // Used jQuery draggable for time saving, though in production a proper D&D mechanism should be used.
       window.$(modalRef.current).draggable({
         handle: '.draggable-header',
         containment: 'window',

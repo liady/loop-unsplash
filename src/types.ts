@@ -2,7 +2,7 @@ import { Basic } from 'unsplash-js/dist/methods/photos/types';
 
 export type IPartialImage = Pick<
   Basic,
-  'id' | 'urls' | 'alt_description' | 'user' | 'description'
+  'id' | 'urls' | 'alt_description' | 'user' | 'description' | 'links'
 >;
 
 export enum SearchState {

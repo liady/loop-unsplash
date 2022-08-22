@@ -37,5 +37,6 @@ function getPartialImage(image: Basic): IPartialImage {
     alt_description: image.alt_description,
     user: image.user,
     description: image.description,
+    links: image.links,
   };
 }

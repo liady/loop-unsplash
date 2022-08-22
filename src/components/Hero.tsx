@@ -8,7 +8,7 @@ export default observer(function Hero() {
     if (currentImage) {
       const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
         'Check out this cool photo'
-      )}&url=${currentImage.urls.regular}`;
+      )}&url=${currentImage.links.html}`;
       window.open(url, '_blank');
     }
   };
