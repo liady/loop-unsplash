@@ -11,6 +11,10 @@ export function useWindowSize() {
         width: window.innerWidth,
         height: window.innerHeight,
       });
+      document.documentElement.style.setProperty(
+        '--max-window-height',
+        `${window.innerHeight}px`
+      );
     }
     // Add event listener
     handleWindowResize();
