@@ -24,6 +24,9 @@
   color: white;
   align-items: center;
   cursor: move;
+  @media only screen and (max-width: 768px) {
+    cursor: default;
+  }
 }
 
 .icon {

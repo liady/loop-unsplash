@@ -3,6 +3,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-bottom: 15px;
 }
 .searchArea {
   display: flex;
@@ -16,7 +17,7 @@
   grid-template-columns: repeat(2, minmax(75px, 1fr));
   grid-auto-rows: 150px;
   gap: 15px;
-  padding: 15px;
+  padding: 15px 15px 0;
   overflow: auto;
   height: 100%;
 }
