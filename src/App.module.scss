@@ -19,11 +19,5 @@
       width: 100%;
       max-height: var(--max-window-height, 100vh);
     }
-
-    body {
-      min-height: 0px;
-      max-height: var(--max-window-height, 100vh);
-      align-items: flex-start;
-    }
   }
 }
