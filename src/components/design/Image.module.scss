@@ -40,4 +40,10 @@
   &:hover {
     background-color: rgba(255, 255, 255, 0.7);
   }
+  
+  @media only screen and (max-width: 768px) {
+    font-size: 8px;
+    padding: 0 3px;
+    line-height: 18px;
+  }
 }
