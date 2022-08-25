@@ -10,17 +10,17 @@
   height: 40px;
   cursor: default;
   &.active {
-      cursor: pointer;
+    cursor: pointer;
     background-color: #18a0fb;
     &:hover {
-        background-color: #1198f3;
+      background-color: #1198f3;
     }
-}
-&:focus {
+  }
+  &:focus {
     outline: 0;
-}
-&.secondary {
-      height: 30px;
+  }
+  &.secondary {
+    height: 30px;
     transition: color 0.2s ease-in-out;
     background-color: white;
     color: #b3b3b3;
@@ -30,4 +30,7 @@
       background-color: white;
     }
   }
+}
+.icon {
+  margin-inline-end: 8px;
 }

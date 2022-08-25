@@ -1,6 +1,9 @@
 import { observer } from 'mobx-react-lite';
 import siteState from '../stores/SiteState';
+import Button from './design/Button';
 import styles from './Hero.module.scss';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default observer(function Hero() {
   const currentImage = siteState.selectedImage;
@@ -14,10 +17,16 @@ export default observer(function Hero() {
   };
   return currentImage ? (
     <div className={styles.main}>
+      <Button
+        className={styles.twitterShare}
+        label="Share"
+        onClick={shareToTwitter}
+        active
+        icon={<FontAwesomeIcon icon={faTwitter} />}
+      />
       <img
         src={currentImage.urls.regular}
         alt={currentImage.alt_description || ''}
-        onClick={shareToTwitter}
       />
     </div>
   ) : null;
